@@ -27,7 +27,7 @@ jobs:
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build:bundle
-    - run: echo -e "@everxyz:registry=https://gitlab.everxyz.com/api/v4/projects/246/packages/npm/\n//gitlab.everxyz.com/api/v4/projects/246/packages/npm/:_authToken=${{ secrets.GITLAB_TOKEN }}" > ~/.npmrc
+    - run: echo -e "@everxyz:registry=https://gitlab.everxyz.com/api/v4/projects/248/packages/npm/\n//gitlab.everxyz.com/api/v4/projects/248/packages/npm/:_authToken=${{ secrets.GITLAB_TOKEN }}" > ~/.npmrc
     - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITLAB_TOKEN }}
